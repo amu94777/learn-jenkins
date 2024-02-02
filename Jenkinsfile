@@ -10,6 +10,10 @@ pipeline {
     environment { 
         GREETING = 'good morning'
     }
+    // give time limits to run pipeline //
+    options {
+        timeout(time: 3, unit: 'SECONDS') 
+    }
 
     // build ///
     stages {
