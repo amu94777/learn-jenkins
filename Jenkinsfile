@@ -12,7 +12,7 @@ pipeline {
     }
     // give time limits to run pipeline //
     options {
-        timeout(time: 10, unit: 'SECONDS') 
+        timeout(time: 1, unit: 'HOURS') 
     }
 
     // build ///
