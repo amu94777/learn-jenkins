@@ -13,6 +13,7 @@ pipeline {
     // give time limits to run pipeline //
     options {
         timeout(time: 1, unit: 'HOURS') 
+        disableConcurrentBuilds()
     }
 
     // build ///
