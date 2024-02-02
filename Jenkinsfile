@@ -29,5 +29,12 @@ pipeline {
         always { 
             echo 'I will always say Hello again!'
         }
-    }
+        success {
+            echo 'i will always tell hiii when pipeline is success'
+        }
+        failure {
+            echo ' i will say check once when pipeline is failure'
+        }    
 } 
+    }
+
