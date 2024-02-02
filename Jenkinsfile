@@ -12,7 +12,7 @@ pipeline {
     }
     // give time limits to run pipeline //
     options {
-        timeout(time: 3, unit: 'SECONDS') 
+        timeout(time: 1, unit: 'SECONDS') 
     }
 
     // build ///
@@ -33,6 +33,7 @@ pipeline {
                  echo "I write shell script here"
                  env
                  echo "$GREETING"
+                 sleep 10
                  """
             }
         }
