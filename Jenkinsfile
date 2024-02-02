@@ -18,7 +18,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Deploy') 
             steps {
                 echo 'Deploying...my project.'
             }
