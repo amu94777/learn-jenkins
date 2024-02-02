@@ -6,6 +6,11 @@ pipeline {
         
        }
     }
+    // environment variables //
+    environment { 
+        GREETING = 'good morning'
+    }
+
     // build ///
     stages {
         stage('Build') {
@@ -20,7 +25,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...my project.'
+                sh """
+                 echo "I write shell script here"
+                 env
+                 echo "$GREETING"
+                 """
             }
         }
     }
